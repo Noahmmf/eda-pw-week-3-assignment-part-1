@@ -117,8 +117,13 @@ colors.pop(-1);
 
 lastColor = "teal";
 
-console.log("The last color should not be,", lastColor, "anymore and the colors that I hace left should be:", colors);
-//originally I had two console logs, is it best practice to seperate or keep toegether? 
+console.log(
+  "The last color should not be,",
+  lastColor,
+  "anymore and the colors that I hace left should be:",
+  colors
+);
+//originally I had two console logs, is it best practice to seperate or keep toegether?
 
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
@@ -131,9 +136,14 @@ console.log("The animals are now", animalArray);
 
 let firstColor;
 colors.shift(-1);
-firstColor= "orange";
+firstColor = "orange";
 
-console.log( "I have removed,", firstColor, "and now the remaining colors are:", colors);
+console.log(
+  "I have removed,",
+  firstColor,
+  "and now the remaining colors are:",
+  colors
+);
 
 // STRETCH GOALS:
 
@@ -148,9 +158,9 @@ let newGems;
 
 newGems = gems;
 
-newGems [1] = "Tourmaline";
+newGems[1] = "Tourmaline";
 
-console.log( "The second item in array is now changed: ", newGems);
+console.log("The second item in array is now changed: ", newGems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
@@ -158,7 +168,6 @@ console.log( "The second item in array is now changed: ", newGems);
 sortedGems = gems.sort();
 sortedGems.reverse();
 console.log("Sorted in reverse alphebetical order", sortedGems);
-
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
@@ -170,8 +179,7 @@ console.log("Sorted in reverse alphebetical order", sortedGems);
 
 let gemString = gems;
 
-console.log(gemString.join(" and "));
-
+console.log(gemString.join("and"));
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines
 //     the gems array with the colors array.
@@ -181,8 +189,7 @@ console.log(gemString.join(" and "));
 
 let colorfulGems = gems.concat(colors);
 
-console.log( colorfulGems );
-
+console.log(colorfulGems);
 
 // DO NOT MODIFY
 // Used for automated testing
