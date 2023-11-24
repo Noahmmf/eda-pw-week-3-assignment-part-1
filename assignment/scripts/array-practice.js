@@ -72,11 +72,9 @@ console.log("Added an animal to end,", animalArray);
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
 
-let desserts = ["Ice cream", "cake", "Cookies"];
+let dessert = "ice cream";
 
-for (let i = 0; i < desserts.length; i++) {
-  favoriteFoods.push(desserts[i]);
-}
+favoriteFoods.push(dessert);
 
 console.log("Favorite foods with dessert: ", favoriteFoods);
 
@@ -177,9 +175,9 @@ console.log("Sorted in reverse alphebetical order", sortedGems);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 
-let gemString = gems;
+let gemString = gems.join( " and ");
 
-console.log(gemString.join("and"));
+console.log(gemString);
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines
 //     the gems array with the colors array.
