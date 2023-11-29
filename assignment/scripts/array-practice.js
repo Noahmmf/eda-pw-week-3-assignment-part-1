@@ -109,18 +109,10 @@ let colors = ["orange", "yellow", "green", "teal"];
 //      Don't forget! Use console.log to verify that the `colors`
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
-let lastColor;
+let lastColor= colors.pop();
 
-colors.pop(-1);
+console.log(lastColor, "Removed last color, now list is: ", colors);
 
-lastColor = "teal";
-
-console.log(
-  "The last color should not be,",
-  lastColor,
-  "anymore and the colors that I hace left should be:",
-  colors
-);
 //originally I had two console logs, is it best practice to seperate or keep toegether?
 
 // Example: Remove the first animal using the Array.shift method.
@@ -132,16 +124,10 @@ console.log("The animals are now", animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!
 
-let firstColor;
-colors.shift(-1);
-firstColor = "orange";
+let firstColor = colors.shift();
 
-console.log(
-  "I have removed,",
-  firstColor,
-  "and now the remaining colors are:",
-  colors
-);
+console.log("Removed last color: ", firstColor);
+console.log( "updated colors are: ", colors );
 
 // STRETCH GOALS:
 
@@ -175,7 +161,7 @@ console.log("Sorted in reverse alphebetical order", sortedGems);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 
-let gemString = gems.join( " and ");
+let gemString = gems.join(" and ");
 
 console.log(gemString);
 
